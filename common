@@ -1,0 +1,81 @@
+ <!-- HTML -->
+
+<div class="projects"><!-- Start Section Projects -->
+	<div class="container">
+		<div class="row">
+			<!-- Item -->
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="1">
+				<div class="count star" data-title="Довольных клиентов" data-value="555">555</div>
+			</div>
+			<!-- Item -->
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="2">
+				<div class="count heart" data-title="Надежных партнеров" data-value="1234">1234</div>
+			</div>
+			<!-- Item -->
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="3">
+				<div class="count lock" data-title="Готовых проектов" data-value="555">555</div>
+			</div>
+
+		</div>
+	</div>
+</div><!-- End Section Projects -->
+====================================================================
+ 
+ <!-- SASS -->
+ /** ====== Section Projects styles ====== **/
+.projects
+	background: white
+	padding: 100px 0 80px
+	.count.lock
+		border-right: none
+	.count
+		text-align: center
+		color: #F33535
+		font-size: 68px
+		line-height: 68px
+		font-weight: bold
+		display: block
+		position: relative
+		border-right: 1px solid #e0e0e0
+		&:after
+			content: attr(data-title)
+			display: block
+			font-size: 22px
+			line-height: 28px
+			color: #444
+			font-weight: 500
+			font-family: "RobotoLight"
+		&:before
+			content: ''
+			display: block
+			margin-bottom: 10px
+			font-family: "FontAwesome"
+	.star:before
+		content: "\f006"
+	.heart:before
+		content: "\f004"
+	.lock:before
+		content: "\f023"
+ ====================================================================
+ 
+ <!-- JS -->
+function counter() {
+		count.each(function() {
+
+			var $this = $(this);
+			$this.fromTo({from: 0, to: $this.data('value'), speed: 2500});
+		
+		});
+	}
+	
+	$self.one('inview', function(event, isInView, visiblePartY, visiblePartY) {
+		if(isInView) {
+			setTimeout(function() {
+				counter();
+			}, 500);
+		}
+	});
+
+});
+    
+    
