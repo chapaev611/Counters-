@@ -4,15 +4,15 @@
 	<div class="container">
 		<div class="row">
 			<!-- Item -->
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="1">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp">
 				<div class="count star" data-title="Довольных клиентов" data-value="555">555</div>
 			</div>
 			<!-- Item -->
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="2">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp">
 				<div class="count heart" data-title="Надежных партнеров" data-value="1234">1234</div>
 			</div>
 			<!-- Item -->
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp" data-num="3">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animFadeInUp">
 				<div class="count lock" data-title="Готовых проектов" data-value="555">555</div>
 			</div>
 
